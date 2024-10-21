@@ -45,7 +45,7 @@
 - [ ] resolve all git dependencies
   - [ ] [hyperswarm-dht](https://github.com/datrs/hyperswarm-dht/tree/hyperspace) uses "hyperspace" as the default branch
   - [ ] [colmeia-hyperswarm-mdns](https://github.com/bltavares/colmeia) currently using master
-  - [ ] [libutp-rs](https://github.com/Frando/libutp-rs/tree/feat/clone2). There is a crate from original author. but we use the branch linked. [crate link](https://crates.io/crates/libutp-rs)
+  - [ ] [libutp-rs](https://github.com/Frando/libutp-rs/tree/feat/clone2). There is a crate from original author. but we use the branch linked. [crate link](https://crates.io/crates/libutp-rs). `libutp-rs` depends on `libutp-sys` but that crate fails to build. I made a PR to fix this [here](https://github.com/johsunds/libutp-sys/pull/1). But it has gone unnoticed. Options: fork and publish these, or, convert this project to a workspace and include them here with fixes.
 
 ## Installation
 ```sh
