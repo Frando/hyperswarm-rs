@@ -39,6 +39,14 @@
 
 *NOTE: This is still in early stages. See the roadmap below. Please feel free to open issues and send PRs :-)*
 
+## TODO
+
+- [ ] switch to tokio from async-std
+- [ ] resolve all git dependencies
+  - [ ] [hyperswarm-dht](https://github.com/datrs/hyperswarm-dht/tree/hyperspace) uses "hyperspace" as the default branch
+  - [ ] [colmeia-hyperswarm-mdns](https://github.com/bltavares/colmeia) currently using master
+  - [ ] [libutp-rs](https://github.com/Frando/libutp-rs/tree/feat/clone2). There is a crate from original author. but we use the branch linked. [crate link](https://crates.io/crates/libutp-rs)
+
 ## Installation
 ```sh
 $ cargo add hyperswarm --git https://github.com/datrs/hyperswarm-rs.git
