@@ -34,6 +34,9 @@ async-trait = "0.1.53"
 async-compat = "0.2.1"
 blake2-rfc = "0.2.18"
 
+[patch.crates-io]
+libutp-sys = { git = "https://github.com/cowlicks/libutp-sys.git", branch = "fix-build-failure", optional = true }
+
 [dev-dependencies]
 env_logger = "0.8.3"
 async-std = { version = "1.9.0", features = ["unstable", "attributes"] }
